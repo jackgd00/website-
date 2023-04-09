@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: aqua;
+    font-family: sans-serif;
+}
+
+.top-bar {
+    height: 57px;
+    top: 0;
+    position: sticky;
+    background: #fff;
+    margin-bottom: 20px;
+    border-bottom: 3px solid grey;
+    z-index: 2;
+
+}
+
+.form-control
+{
+    margin-top: 9px;
+    margin-left: 30px;
+    border: 1px solid grey !important;
+    border-top-left-radius: 20px !important;
+    border-bottom-left-radius: 20px !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    box-shadow: none !important;
+
+}
+
+.input-group-text
+{
+    background: grey !important;
+    border: 1px solid grey !important;
+    margin: 8.5px 10px 3px 0 !important;
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+    border-top-right-radius: 20px !important;
+    border-bottom-right-radius: 20px !important;
+    cursor: pointer;
+}
+
+.search-box
+{
+    display: inline-flex;
+    width: 60%;
+}
+
+.logo
+{
+    height: 40px ;
+    margin: 5px 10px ;
+}
+
+.fa-magnifying-glass
+{
+    color: white;
+}
+
+.menu-bar
+{
+    width: 40%;
+    height: 57px;
+    float: right;
+}
+
+.menu-bar ul
+{
+    display: inline-flex;
+    float: right;
+}
+
+.menu-bar ul li
+{
+    border-left: 1px solid #fff;
+    list-style-type: none;
+    padding: 15px 35px;
+    text-align: center;
+    background-color: grey;
+    cursor: pointer;
+}
+.menu-bar ul li a
+{
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+.fa-basket-shopping
+{
+    margin-right: 5px;
+}
+
+@media only screen and (max-width: 980px)
+{
+    .top-bar
+{
+    height: 118px;
+    border-bottom: 0;
+}   
+.search-box
+{
+    width: 100%;
+}
+.menu-bar
+{
+    width: 100%;
+}
+.menu-bar ul 
+{
+    margin: 10px ;
+    width: 100%;
+}
+.menu-bar ul li 
+{
+    height: 57px ;
+    width: 100%;
+}
+
+}
+
+
+
+
+
+
+.side-menu
+{
+    height: 80%;
+    width: 15%;
+    font-size: 14px;
+    float: left;
+    z-index: 2;
+    background-color: #ddd;
+}
+
+.side-menu ul
+{
+    margin-left: 10px;
+}
+.side-menu ul li
+{
+    list-style-type: none;
+    font-weight: bold;
+    margin-top: 10px;
+    cursor: pointer;
+
+}
+.side-menu ul li:hover
+{
+    color: pink;
+
+}
+.side-menu ul li ul
+{
+    display: none;
+    z-index: 10;
+    top: 77px;
+
+}
+.side-menu ul li:hover ul 
+{
+    display: block;
+    height: 400px;
+    margin-left: 12.5%;
+    padding: 0px 100px 100px 10px;
+    position: fixed;
+    background: #ecececce;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 5);
+}
+
+.fa-angles-right
+{
+    margin-top: 4px;
+    margin-right: 8px;
+    float: right;
+}
+#menu-bar, #close-bar
+{
+    font-size: 30px;
+    margin: 10px;
+    color: pink;
+    display: none;
+}
+
+@media only screen and (max-width: 980px)
+{
+    .side-menu
+    {
+        width: 34%;
+        z-index: 20;
+        top: 133px;
+        position: fixed;
+        font-size: 12px;
+        display: none;
+    }
+    .side-menu ul li ul 
+    {
+        top: 133px ;
+        
+    }
+    .side-menu ul li :hover ul
+    {
+        margin-left: 35px;
+    }
+    #menu-bar
+    {
+        display: block;
+    }
+}
+
+.slider
+{
+    width: 85%;
+    margin-left: 15%;
+    padding: 0 10px;
+}
+.carousel
+{
+    box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 5);
+
+}
+@media only screen and (max-width: 980px)
+{
+    .slider{
+        width: 100%;
+        margin-left: 0;
+    }
+}
+.featured-categories
+{
+    margin: 50px 0;
+}
+.featured-categories img
+{
+    width: 100%;
+    padding: 20px 0;
+    transition: 1s;
+    cursor: pointer;
+}
+.featured-categories img:hover
+{
+    transform: scale(1.1);
+}
